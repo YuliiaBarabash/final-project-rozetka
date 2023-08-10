@@ -27,6 +27,8 @@
 }
 
 .eye {
+  color: #44B26F;
+  font-size: 2em;
   position: absolute;
   top: 47.7%;
   transform: translateX(-130%);

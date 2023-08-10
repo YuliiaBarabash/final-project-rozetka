@@ -3,7 +3,6 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import React, { useState } from 'react';
 
 const Input = ({ shouldHide }) => {
-    let iconStyles = { color: '#44B26F', fontSize: '2em' };
     const [passwordVisible, setPasswordVisible] = useState(!shouldHide);
 
     const togglePasswordVisibility = () => {
@@ -19,9 +18,9 @@ const Input = ({ shouldHide }) => {
             />
             {shouldHide ? (
                 passwordVisible ? (
-                    <AiFillEyeInvisible className='eye' style={iconStyles} onClick={togglePasswordVisibility} />
+                    <AiFillEyeInvisible className='eye' onClick={togglePasswordVisibility} />
                 ) : (
-                    <AiFillEye className='eye' style={iconStyles} onClick={togglePasswordVisibility} />
+                    <AiFillEye className='eye' onClick={togglePasswordVisibility} />
                 )
             ) : null}
         </label>
