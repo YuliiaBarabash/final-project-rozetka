@@ -1,0 +1,34 @@
+.login-input {
+  width: 257px;
+  height: 56px;
+  padding-left: 20px;
+  border: none;
+  background-color: #d9d9d9;
+  color: #276840;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.input-container {
+  height: 251px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+:focus {
+  outline: 2px solid #44b26f;
+}
+
+::placeholder {
+  font-weight: 600;
+  color: #44b26f;
+}
+
+.eye {
+  position: absolute;
+  top: 47.7%;
+  transform: translateX(-130%);
+  cursor: pointer;
+}

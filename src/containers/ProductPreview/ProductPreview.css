@@ -1,0 +1,14 @@
+.productPreview-page {
+    background-color: #44B26F;
+    height: 100%;
+    padding: 10px;
+}
+
+.products-preview {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+

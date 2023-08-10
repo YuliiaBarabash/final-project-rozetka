@@ -1,0 +1,15 @@
+
+.product-header {
+    background-color: #44B26F;
+    height: 100vh;
+    padding: 10px;
+}
+
+.products-logo {
+    padding: 10px 0px 0px 15px;
+}
+
+.product-heading {
+    display: grid;
+    justify-self: center;
+}

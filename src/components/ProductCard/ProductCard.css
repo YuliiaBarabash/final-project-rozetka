@@ -1,0 +1,42 @@
+.productCard {
+  padding: 20px 10px;
+  width: 273px;
+  height: 376px;
+  background-color: #fff;
+  display: grid;
+  justify-items: center;
+}
+
+.productName {
+  text-align: center;
+}
+
+.card-span-wrap {
+  width: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.price {
+  font-size: 24px;
+  color: #fc5b00;
+  font-weight: 500;
+}
+
+.cartWrap {
+  display: flex;
+  align-items: center;
+  width: 273px;
+  justify-content: center;
+}
+
+.cartIcon {
+  margin-right: 10px;
+}
+
+.cartDescription {
+  font-size: 15px;
+  color: #05bc52;
+}

@@ -1,0 +1,23 @@
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0px;
+}
+
+.products-btn {
+    width: 179px;
+    height: 52px;
+    padding: 5px 0px 5px 15px ;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #05BC52;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-icon {
+    margin-right: 15px;
+}
