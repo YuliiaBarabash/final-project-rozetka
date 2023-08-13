@@ -9,9 +9,9 @@ import ProductPreview from './containers/ProductPreview/ProductPreview';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Login />
+   {/* <Login /> */}
    {/* <Products /> */}
-   {/* <ProductPreview/> */}
+   <ProductPreview/>
   </React.StrictMode>
 );
 
