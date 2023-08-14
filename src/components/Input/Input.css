@@ -9,6 +9,10 @@
   font-size: 1em;
 }
 
+.input-wrap {
+  position: relative;
+}
+
 .input-container {
   height: 251px;
   display: flex;
@@ -30,7 +34,11 @@
   color: #44B26F;
   font-size: 2em;
   position: absolute;
-  top: 47.7%;
-  transform: translateX(-130%);
+  top: 23%;
+  right: 15px;
   cursor: pointer;
+}
+
+.error-message {
+  color: red;
 }

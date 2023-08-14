@@ -11,3 +11,14 @@
 .login-logo {
   margin-top: 70px;
 }
+
+.login-btn {
+  width: 277px;
+  height: 56px;
+  background-color: #44B26F;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2em;
+  cursor: pointer;
+}
