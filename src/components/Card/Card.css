@@ -11,3 +11,19 @@
 .login-logo {
   margin-top: 70px;
 }
+
+.login-btn {
+  width: 277px;
+  height: 70px;
+  background-color: #44B26F;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.gap {
+  height: 50px;
+}
