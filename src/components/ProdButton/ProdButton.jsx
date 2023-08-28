@@ -1,14 +1,15 @@
 import "./ProdButton.css";
 import userIcon from "../../assets/user-icon.svg";
 import plusIcon from "../../assets/plus.svg";
+import { Link } from "react-router-dom";
 
 const ProdButton = () => {
   return (
     <div className="btn-container">
-      <button className="products-btn" type="button">
+      <Link className="products-btn" type="button" to="/product-preview">
         <img src={userIcon} className="btn-icon" alt="person" />
         Preview
-      </button>
+      </Link>
       <button className="products-btn" type="button">
         <img src={plusIcon} className="btn-icon" alt="plus" />
         Add product
