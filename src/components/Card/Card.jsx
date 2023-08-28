@@ -1,16 +1,20 @@
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import logo from "../../assets/logo.svg";
 import Input from "../Input/Input";
 import "./Card.css";
 
 const Card = () => {
+
+  const navigate = useNavigate();
+
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [isLoginEmpty, setIsLoginEmpty] = useState(false);
   const [isPasswordEmpty, setIsPasswordEmpty] = useState(false);
   const [isLoginValid, setIsLoginValid] = useState(false);
 
-  const token = "testToken";
 
   const handleChange = (e) => {
     if (e.target.name === "Login") {
@@ -36,8 +40,8 @@ const Card = () => {
     }
 
     if (login === "username" && password === "password") {
-      localStorage.setItem('authToken', token);
-      console.log('Success');
+      localStorage.setItem('token', '123456');
+      navigate("/products");
     } else if (login !== "username" && login !== "") {
       setIsLoginValid(true);
       setIsLoginEmpty(false);
@@ -80,12 +84,14 @@ const Card = () => {
           isError={isPasswordEmpty}
         />
 
-        <input
+        <Link
+        onClick={handleSubmit}
+        to="/products"
           className="login-btn"
           type="submit"
           name="button"
           value="Login"
-        ></input>
+        >Login</Link>
       </form>
     </div>
   );

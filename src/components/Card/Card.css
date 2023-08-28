@@ -13,6 +13,10 @@
 }
 
 .login-btn {
+  text-decoration: none;
+  display: grid;
+  justify-items: center;
+  align-items: center;
   width: 277px;
   height: 70px;
   background-color: #44B26F;

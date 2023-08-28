@@ -3,16 +3,15 @@ import "./Products.css";
 import productsLogo from "../../assets/logo-white.svg";
 import ProdButton from "../../components/ProdButton/ProdButton";
 import Table from "../../components/Table/Table";
+import { API_URL } from "../../constants/Constance";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
 
-  const API_URL = "https://64df853771c3335b2582c0c6.mockapi.io/api/products";
-
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(API_URL, {
+        const response = await fetch(`${API_URL}/products`, {
           method: "GET",
           headers: { "content-type": "application/json" },
         });

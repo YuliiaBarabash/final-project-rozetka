@@ -2,8 +2,7 @@ import React from "react";
 import "./Table.css";
 import TableRow from "../TableRow/TableRow";
 import arrows from "../../assets/arrows.svg";
-import pencil from "../../assets/pencil.svg";
-import bucket from "../../assets/bucket.svg";
+
 
 const Table = ({ products }) => {
   return (

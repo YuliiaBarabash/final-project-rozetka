@@ -13,7 +13,7 @@ const TableRow = ({ product, index }) => {
         {product.id}
       </th>
       <th className={`item ${isEven ? "white-text" : "purple-text"}`}>
-        {product.type}
+        {product.category}
       </th>
       <th className={`item ${isEven ? "white-text" : "purple-text"}`}>
         {product.name}
