@@ -1,49 +1,39 @@
 import "./ProductPreview.css";
+import { useEffect, useState } from "react";
+import { API_URL } from "../../constants/Constance";
 import productsLogo from "../../assets/logo-white.svg";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import ProductImage from "../../assets/laptop.png";
 import { Link } from "react-router-dom";
 
-const products = [
-  {
-    id: 0,
-    name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
-    price: "25 000 ₴",
-    image: ProductImage,
-  },
-  {
-    id: 1,
-    name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
-    price: "25 000 ₴",
-    image: ProductImage,
-  },
-  {
-    id: 2,
-    name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
-    price: "25 000 ₴",
-    image: ProductImage,
-  },
-  {
-    id: 3,
-    name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
-    price: "25 000 ₴",
-    image: ProductImage,
-  },
-  {
-    id: 4,
-    name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
-    price: "25 000 ₴",
-    image: ProductImage,
-  },
-  {
-    id: 5,
-    name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
-    price: "25 000 ₴",
-    image: ProductImage,
-  },
-];
 
 const ProductPreview = () => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(`${API_URL}/preview`, {
+          method: "GET",
+          headers: { "content-type": "application/json" },
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    fetchData();
+  }, []);
+
   return (
     <div className="productPreview-page">
         <img src={productsLogo} className="products-logo" alt="main logo" />

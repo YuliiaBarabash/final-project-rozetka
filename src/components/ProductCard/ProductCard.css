@@ -7,6 +7,11 @@
   justify-items: center;
 }
 
+.productImage {
+  width: 200px;
+  height: 139px;
+}
+
 .productName {
   text-align: center;
 }
