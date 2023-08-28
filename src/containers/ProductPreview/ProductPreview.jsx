@@ -21,25 +21,25 @@ const products = [
     id: 2,
     name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
     price: "25 000 ₴",
-    image: "../../assets/laptop.png",
+    image: ProductImage,
   },
   {
     id: 3,
     name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
     price: "25 000 ₴",
-    image: "../../assets/laptop.png",
+    image: ProductImage,
   },
   {
     id: 4,
     name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
     price: "25 000 ₴",
-    image: "../../assets/laptop.png",
+    image: ProductImage,
   },
   {
     id: 5,
     name: "Ноутбук Lenovo Y50-70 Aluminum Black 1",
     price: "25 000 ₴",
-    image: "../../assets/laptop.png",
+    image: ProductImage,
   },
 ];
 
